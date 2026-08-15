@@ -11,3 +11,10 @@ Chủ đề này sẽ được mở rộng dần với nội dung về kernel, d
    :titlesonly:
 
    learning-path/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Docs
+   :titlesonly:
+
+   docs/index
