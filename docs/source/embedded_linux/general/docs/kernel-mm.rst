@@ -140,9 +140,9 @@ Tài liệu phân tích về **Kernel Memory Management** trong Linux, bao gồm
    * - Cma
      - Contiguous memory allocator
      - Thiết bị DMA cần vùng nhớ liên tục, nhưng kernel đã bị phân mảnh. CMA sẽ reserve vùng cho page cache dùng, khi cần thì migrate đi
-   * - Express CMA
-     - Low-latency CMA variant
-     - Giảm latency CMA allocation - predict response time
+  ..  * - Express CMA
+  ..    - Low-latency CMA variant
+  ..    - Giảm latency CMA allocation - predict response time
 
 ---
 
@@ -151,7 +151,7 @@ Tài liệu phân tích về **Kernel Memory Management** trong Linux, bao gồm
 **Scenario in use (Key scenario):**
 
 1. Kernel page swapping
-2. Express CMA - Predictable Latency
+.. 2. Express CMA - Predictable Latency
 3. Z4 Fold density compression
 4. Page fault statistics
 5. Memory logger
@@ -186,31 +186,31 @@ Tài liệu phân tích về **Kernel Memory Management** trong Linux, bao gồm
 
 ---
 
-.. rubric:: 9. Express CMA
+.. .. rubric:: 9. Express CMA
 
-**API name:** ``express_cma_*``
+.. **API name:** ``express_cma_*``
 
-- ``express_cma_init``: Khởi tạo module.
-- ``express_cma_alloc``: Cấp phát nhanh bộ nhớ cho việc giảm độ trễ.
-- ``express_cma_free``: Trả lại các vùng nhớ đã cấp phát.
-- ``express_cma_predict_latency``: Tính toán thời gian allocation time.
-- ``express_cma_prealloc_pool``: Đặt trước các vùng nhớ liên tục.
+.. - ``express_cma_init``: Khởi tạo module.
+.. - ``express_cma_alloc``: Cấp phát nhanh bộ nhớ cho việc giảm độ trễ.
+.. - ``express_cma_free``: Trả lại các vùng nhớ đã cấp phát.
+.. - ``express_cma_predict_latency``: Tính toán thời gian allocation time.
+.. - ``express_cma_prealloc_pool``: Đặt trước các vùng nhớ liên tục.
 
-**Mục đích của express CMA module:**
+.. **Mục đích của express CMA module:**
 
-- Giảm các latency không đoán trước được do các vấn đề:
-  - Page migration overhead
-  - Compaction delays (thời gian nén page)
-  - Reclaim operation (quá trình dọn dẹp và thu hồi page)
-- Giảm hiện tượng stuttering/frame drops trong suốt quá trình video playback và multimedia rendering.
+.. - Giảm các latency không đoán trước được do các vấn đề:
+..   - Page migration overhead
+..   - Compaction delays (thời gian nén page)
+..   - Reclaim operation (quá trình dọn dẹp và thu hồi page)
+.. - Giảm hiện tượng stuttering/frame drops trong suốt quá trình video playback và multimedia rendering.
 
-**How it works:**
+.. **How it works:**
 
-- Cấp phát trước và dành riêng các vùng nhớ liên tục (contiguous block).
-- Tối thiểu hóa các migration trong quá trình cấp phát.
-- Dự đoán các allocation latency cho việc lập lịch.
+.. - Cấp phát trước và dành riêng các vùng nhớ liên tục (contiguous block).
+.. - Tối thiểu hóa các migration trong quá trình cấp phát.
+.. - Dự đoán các allocation latency cho việc lập lịch.
 
----
+.. ---
 
 .. rubric:: 10. Z4 Fold Density Compression (z4fold.c)
 
