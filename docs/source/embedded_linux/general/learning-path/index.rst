@@ -30,5 +30,7 @@ Lộ trình học Embedded Linux từ cơ bản đến nâng cao, áp dụng tr�
    level-18-yocto
    level-19-bootloader
    level-20-bsp-engineer
+   level-21-learning-roadmap
+   level-22-embedded-c-project
 
 .. include:: ../../../_includes/contact_info.rst

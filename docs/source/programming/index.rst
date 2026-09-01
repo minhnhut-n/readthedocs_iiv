@@ -34,6 +34,13 @@ Tài liệu và ghi chú về **lập trình, thuật toán và hệ thống nh�
 
       Cấu trúc dữ liệu cơ bản, nâng cao và ứng dụng trong giải thuật.
 
+   .. grid-item-card:: 🧭 Roadmap
+      :link: roadmap/index
+      :link-type: doc
+      :class-card: sd-shadow-md
+
+      Lộ trình phát triển kỹ năng, định hướng học tập và sự nghiệp lập trình.
+
 .. toctree::
    :maxdepth: 2
    :caption: Programming & Algorithms
@@ -43,3 +50,4 @@ Tài liệu và ghi chú về **lập trình, thuật toán và hệ thống nh�
    programming_language/index
    algorithms/index
    data_structure/index
+   roadmap/index
