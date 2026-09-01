@@ -140,9 +140,9 @@ Tài liệu phân tích về **Kernel Memory Management** trong Linux, bao gồm
    * - Cma
      - Contiguous memory allocator
      - Thiết bị DMA cần vùng nhớ liên tục, nhưng kernel đã bị phân mảnh. CMA sẽ reserve vùng cho page cache dùng, khi cần thì migrate đi
-  ..  * - Express CMA
-  ..    - Low-latency CMA variant
-  ..    - Giảm latency CMA allocation - predict response time
+   * - Express CMA
+     - Low-latency CMA variant
+     - Giảm latency CMA allocation - predict response time
 
 ---
 
