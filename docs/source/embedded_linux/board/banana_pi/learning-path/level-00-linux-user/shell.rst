@@ -176,20 +176,20 @@ Reference: https://systemd.io/
 
 Các hạng mục trong systemd là:
 
-- Nhóm 1: Quản lý dịch vụ hệ thống
+Nhóm 1: Quản lý dịch vụ hệ thống
   - systemctl, quản lý dịch vụ, trong đó có start/stop/restart/enable/disable, điều khiển nguồn reboot/poweroff.
   - systemd-analyze, hiệu năng khởi động của hệ thống (booting time)
 
-- Nhóm 2: Nhật ký (Logs)
+Nhóm 2: Nhật ký (Logs)
   - journalctl, xem và lọc các nhật ký hệ thống, nhân kernel, hoặc các khoảng thời gian cụ thể.
   - systemd-cat, chuyển hướng đầu ra của một lệnh bất kì hoặc một file text vào hệ thống của journald.
 
-- Nhóm 3: System configuration
+Nhóm 3: System configuration
   - hostnamectl, thay đổi tên máy tính, thông tin kiến trúc hệ điều hành.
   - timedatectl, quản lý thời gian, múi giờ, đồng bộ thời gian qua mạng NTP.
   - localectl, cấu hình ngôn ngữ hệ thống và sơ đồ bàn phím (keyboard layout).
 
-- Nhóm 4: Sandbox
+Nhóm 4: Sandbox
   - coredumpctl, tìm kiếm và phân tích các file coredump(dữ liệu lưu lại khi một chương trình crash/lỗi).
   - machinectl, quản lý và tương tác với các container hoặc máy ảo chạy bằng nspawn.
 
