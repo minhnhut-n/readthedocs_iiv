@@ -6,6 +6,13 @@ Danh sách tất cả các project, được phân loại theo từng mục.
 .. grid:: 1
    :gutter: 3
 
+   .. grid-item-card:: 🧠 AI Projects
+      :link: ai/index
+      :link-type: doc
+      :class-card: sd-shadow-md
+
+      Các project về Edge AI, TinyML, Machine Learning trên hệ thống nhúng.
+
    .. grid-item-card:: 🤖 Robot Projects
       :link: robot/index
       :link-type: doc
@@ -32,6 +39,7 @@ Danh sách tất cả các project, được phân loại theo từng mục.
    :caption: Danh mục
    :hidden:
 
+   ai/index
    robot/index
    linux/index
    mcu/index
