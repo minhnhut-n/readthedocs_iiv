@@ -10,4 +10,5 @@ Tài liệu về Banana Pi boards.
    schematic
    setup
    utility-cmd
+   hardware-capabilities
    learning-path/index
