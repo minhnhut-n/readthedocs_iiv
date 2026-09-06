@@ -9,5 +9,6 @@ Các project về Embedded Linux, kernel, device drivers, BSP.
    :glob:
 
    *
+   bp4m4-st7735-monitor-dp/index
 
 .. include:: ../../_includes/contact_info.rst
