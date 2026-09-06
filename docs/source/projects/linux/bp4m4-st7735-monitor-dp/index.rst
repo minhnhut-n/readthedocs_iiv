@@ -11,3 +11,4 @@ hardware pinout, giao thức lệnh hiển thị, cho đến tầng tối ưu ph
    :titlesonly:
 
    first-view
+   pre-setting
